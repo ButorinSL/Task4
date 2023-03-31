@@ -14,14 +14,15 @@ internal class Program
         int numberA = Convert.ToInt32(valueA); // переводим введеное значение в числовой режим
         int numberX = 1;
 
-        while (numberX < numberA);
-
-            int ostatok = numberA % 2;
+        while (numberX <= numberA)
+        {
+            int ostatok = numberX % 2;
             if (ostatok == 0)
             {
                 Console.WriteLine (numberX);
             }
-        numberX = numberX + 1;
+            numberX = numberX + 1;
+        }
     }
 }
 
